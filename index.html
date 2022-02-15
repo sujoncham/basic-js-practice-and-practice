@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #d65;
+            height: 100vh;
+        }
+
+        input[type=text]{
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .btnB{
+            padding: 5px 26px;
+            background: #d80;
+            border: none;
+            border-radius: 8px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <input type="text" id="grade" >
+        <button type="submit" class="btnB" id="check">check</button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <div class="ulappend">
+            <ul id="ul">
+                <li>This is first Li</li>
+                <li>This is second Li</li>
+                <li>This is third Li</li>
+                <li>This is forth Li</li>
+            </ul>
+            <button id="make-me-hotpink">Make me HotPink</button>
+            <button id="make-me-purple">Make me Purple</button>
+            <button id="make-me-green">Make me Green</button>
+            <button id="make-me-megenda">make-me-Megenda</button>
+        </div>
+
+
+        <div id="comments-box">
+            <h1>I am awesome today.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudaus!</p>
+ 
+        </div>
+        <div class="comments">
+            <textarea name="comment-text" id="comment-text" cols="60" rows="5"></textarea> </br>
+            <button id="com-push">Post</button>
+        </div>
+
+    </div>
+
+
+    <script src="index.js" ></script>
+    <script src="while.js" ></script>
+    <script src="practice.js" ></script>
+    <script src="interestrate.js" ></script>
+    <script src="problem.js" ></script>
+    <script src="assignment-4.js" ></script>
+
+    <script>
+        const li = document.createElement('li');
+        li.innerText = "This is Six li";
+        const ul = document.getElementById('ul');
+        ul.appendChild(li);
+    </script>
+</body> 
+</html>
